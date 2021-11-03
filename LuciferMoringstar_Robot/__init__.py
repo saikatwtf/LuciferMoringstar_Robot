@@ -33,15 +33,13 @@ HELP = """
 """
 
 ABOUT = """
-➥ Name : Auto Filter With IMDB
+⭐ Name : [Catwoman Bot](t.me/TheCatWomanBot)
     
-➥ Credits : Subin
+⭐ Daddy : <b>@AnnihilusOP</b>
 
-➥ Editing : [Muhammed RK](t.me/Mrk_YT)
+⭐ Language : <code>Python3</code>
 
-➥ Language : Python3
+⭐ Library : <code>Pyrogram Asyncio 1.13.0</code>
 
-➥ Library : Pyrogram Asyncio 1.13.0
-
-➥ Source Code : [Click Me](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
+⭐ Channel : [@MoviZenX](https://t.me/MoviZenX/270)
 """
