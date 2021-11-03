@@ -53,17 +53,17 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🎬 Title:** {search}\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**🎲 Uploaded by {message.chat.title}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"MoviZenX#{file_id}")]
                     )
         else:
-            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
+            await client.send_sticker(chat_id=message.from_user.id, sticker='CAACAgUAAxkBAAEC3MFhNfUyJ2Yw9XvUAUQRHTrxoQveUgACEAMAAqwtsVUwfPkAAeuKX_IgBA')
             return
 
         if not btn:
@@ -79,7 +79,7 @@ async def filter(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
+                [InlineKeyboardButton(text="📜 Pages 1/1",callback_data="pages")]
             )
             poster=None
             if API_KEY:
@@ -95,10 +95,10 @@ async def filter(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="NEXT 👉🏼",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"📜 Pages 1/{data['total']}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
@@ -290,9 +290,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "help":
             buttons = [[
                 InlineKeyboardButton('Update Channel', url='t.me/MoviZenX'),
-                InlineKeyboardButton('😈 Daddy's Name 😈', url="https://t.me/AnnihilusOP")
-                ],[
                 InlineKeyboardButton('🎯 Movie Group 🎯', url='https://t.me/MoviZenXFlix')
+                ],[
+                InlineKeyboardButton('😈 Daddy Name 😈', url='https://t.me/AnnihilusOP')
                 ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
@@ -306,7 +306,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
-        elif query.data.startswith("pr0fess0r_99"):
+        elif query.data.startswith("MoviZenX"):
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
             for files in filedetails:
