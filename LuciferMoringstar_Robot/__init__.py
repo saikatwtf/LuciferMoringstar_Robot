@@ -11,25 +11,26 @@ from .Channel import (
 )
 
 HELP = """
-<b><u>Basic Commads</u></b>
+○  ɪᴛ's ɴᴏᴛᴇ ᴄᴏᴍᴘʟɪᴄᴀᴛᴇᴅ...🤓
 
-➥ /start : check if am alive or dead
-➥ /about : About Me
-➥ /stats user Status
+○  ᴄʀᴇᴀᴛᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ @TheCatWomanBot ᴀᴅᴍɪɴ ᴛʜᴇʀᴇ, ᴀɴᴅ sᴛᴀʀᴛ ᴀsᴋɪɴɢ ᴍᴏᴠɪᴇs ᴏɴ ᴛʜᴀᴛ ɢʀᴏᴜᴘ 
 
-<b><u>Bot Owner Only</u></b>
+ᴇɴᴊᴏʏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs 🔥❤️
 
-➥ /broadcast Replay Any Message or Media
-➥ /ban_user  click ban_user more info
-➥ /unban_user click unban_user more info
-➥ /banned_users Banned User Details
-➥ /total How Many Files Added In Database
-➥ /logger  Get Logs
-➥ /delete Delete File From Database
+○ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs
+     
+ /start - ᴄʜᴇᴄᴋ ɪ'ᴍ ᴀʟɪᴠᴇ..
+ /about - ᴀʙᴏᴜᴛ ᴍᴇ
+ /status - ʙᴏᴛ sᴛᴀᴛᴜs
+ /Broadcast - ʙʀᴏᴀᴅᴄᴀsᴛ (ᴏᴡɴᴇʀ ᴏɴʟʏ)
+ /ban_user - ʙᴀɴ ᴜsᴇʀ (ᴏᴡɴᴇʀ ᴏɴʟʏ)
+ /unban_user - ᴜɴʙᴀɴ ᴜsᴇʀ (ᴏᴡɴᴇʀ ᴏɴʟʏ)
+ /banned_users ᴜsᴇʀ ᴅᴇᴛᴀɪʟs (ᴏᴡɴᴇʀ ᴏɴʟʏ)
+ /total - ᴛᴏᴛᴀʟ ꜰɪʟᴇs (ᴏᴡɴᴇʀ ᴏɴʟʏ)
+ /logger - ɢᴇᴛ ʟᴏɢs (ᴏᴡɴᴇʀ ᴏɴʟʏ)
+ /delete - ᴅᴇʟᴇᴛᴇ (ᴏᴡɴᴇʀ ᴏɴʟʏ)
 
-<b>[➡️How To Add Old Files For database](https://youtu.be/mtu5hgW-l_o)
-
-@Mo_Tech_YT></b>
+© ᴍᴀiɴᴛᴀiɴᴇᴅ ʙʏ @AnnihilusOP
 """
 
 ABOUT = """
@@ -42,4 +43,6 @@ ABOUT = """
 ⭐ Library : <code>Pyrogram Asyncio 1.13.0</code>
 
 ⭐ Channel : [@MoviZenX](https://t.me/MoviZenX/270)
+
+⭐ Credits : <b><i>Everyone in this journey</i></b>
 """
